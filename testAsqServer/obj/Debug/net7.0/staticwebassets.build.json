@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yOmiQwrHehwf0ecds3CayCfvzpmJ6LI7jlzVcoyuJd0=",
+  "Source": "testAsqServer",
+  "BasePath": "_content/testAsqServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
