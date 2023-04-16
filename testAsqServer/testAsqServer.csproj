@@ -27,10 +27,14 @@
     <None Remove="model\" />
     <None Remove="model\DTO\" />
     <None Remove="model\Entity\" />
+    <None Remove="service\" />
+    <None Remove="service\formService\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="model\" />
     <Folder Include="model\DTO\" />
     <Folder Include="model\Entity\" />
+    <Folder Include="service\" />
+    <Folder Include="service\formService\" />
   </ItemGroup>
 </Project>

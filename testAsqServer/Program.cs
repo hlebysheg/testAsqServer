@@ -1,4 +1,7 @@
-﻿var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+﻿using Microsoft.EntityFrameworkCore;
+using testAsqServer.model.Entity;
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +19,8 @@ builder.Services.AddCors(options =>
                           policy.AllowAnyOrigin();
                       });
 });
+builder.Services.AddDbContext<FormDbContext>(opts =>
+        opts.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 var app = builder.Build();
 
 app.UseCors(MyAllowSpecificOrigins);
