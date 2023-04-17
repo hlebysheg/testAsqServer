@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using testAsqServer.model.DTO;
+using testAsqServer.service.formService;
 
 namespace testAsqServer.Controllers;
 //
@@ -7,21 +8,20 @@ namespace testAsqServer.Controllers;
 [Route("[controller]")]
 public class FormController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
 
     private readonly ILogger<FormController> _logger;
+    private readonly IFormService _formService;
 
-    public FormController(ILogger<FormController> logger)
+    public FormController(ILogger<FormController> logger, IFormService formService)
     {
         _logger = logger;
+        _formService = formService;
     }
   
     [HttpPost(Name = "form")]
-    public IActionResult Get([FromForm] FormDTO dto)
+    public async Task<IActionResult> GetAsync([FromForm] FormDTO dto)
     {
+        await _formService.SaveFormAsync(dto);
         return Ok(dto);
     }
 }

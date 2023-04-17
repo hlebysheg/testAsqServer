@@ -1753,24 +1753,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/aleksandrsavcic/.nuget/packages/": {}
+    "C:\\Users\\Alex\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aleksandrsavcic/Projects/testAsqServer/testAsqServer/testAsqServer.csproj",
+      "projectUniqueName": "C:\\Users\\Alex\\Source\\Repos\\hlebysheg\\testAsqServer\\testAsqServer\\testAsqServer.csproj",
       "projectName": "testAsqServer",
-      "projectPath": "/Users/aleksandrsavcic/Projects/testAsqServer/testAsqServer/testAsqServer.csproj",
-      "packagesPath": "/Users/aleksandrsavcic/.nuget/packages/",
-      "outputPath": "/Users/aleksandrsavcic/Projects/testAsqServer/testAsqServer/obj/",
+      "projectPath": "C:\\Users\\Alex\\Source\\Repos\\hlebysheg\\testAsqServer\\testAsqServer\\testAsqServer.csproj",
+      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alex\\Source\\Repos\\hlebysheg\\testAsqServer\\testAsqServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/aleksandrsavcic/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1837,7 +1839,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -10,10 +10,10 @@ namespace testAsqServer.model.Entity
         {
         }
 
-        DbSet<FileInfo> FileInfo { get; set; }
-        DbSet<OOOForm> OOOForm { get; set; }
-        DbSet<PayForm> PayForm { get; set; }
-        DbSet<StandartIPForm> StandartIPForm { get; set; }
+        public DbSet<FileInfo> FileInfo { get; set; }
+        public DbSet<OOOForm> OOOForm { get; set; }
+        public DbSet<PayForm> PayForm { get; set; }
+        public DbSet<StandartIPForm> StandartIPForm { get; set; }
     }
 }
 

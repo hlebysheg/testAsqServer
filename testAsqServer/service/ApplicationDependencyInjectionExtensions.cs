@@ -5,7 +5,7 @@ namespace testAsqServer.service
 {
     public static class ApplicationDependencyInjectionExtensions
     {
-        public static IServiceCollection AddOrderService(this IServiceCollection services)
+        public static IServiceCollection AddFormService(this IServiceCollection services)
         {
             return services
                 .AddScoped<IFormService, FormServiceWorker>();
